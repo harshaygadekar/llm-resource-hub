@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LLM Resource Hub
 
-## Getting Started
+A comprehensive web platform designed to streamline access to Large Language Model (LLM) resources. This hub serves as a centralized repository where developers, researchers, and AI enthusiasts can discover, learn about, and compare different LLM tools, frameworks, and best practices. Built with Next.js 14, it offers a modern, fast, and intuitive interface for exploring the evolving landscape of language models.
 
-First, run the development server:
+> Resources are carefully curated and updated weekly to ensure you have access to the latest and most relevant LLM content.
 
+## Available Resources
+
+- **Open Source Models (25+)**
+  - Llama 2 family models and fine-tunes
+  - Mistral variations and adaptations
+  - Falcon models and derivatives
+  - Popular instruction-tuned models
+
+- **Commercial APIs (10+)**
+  - OpenAI GPT series
+  - Anthropic Claude models
+  - Google PaLM/Gemini
+  - Integration guides and pricing comparisons
+
+- **Development Tools (15+)**
+  - LangChain frameworks and examples
+  - Vector databases and implementations
+  - Prompt engineering tools
+  - Model evaluation frameworks
+
+- **Courses & Training (20+)**
+  - University courses (Stanford, MIT, Berkeley)
+  - Professional certifications
+  - Online bootcamps
+  - Workshop materials
+
+- **Datasets (30+)**
+  - Pre-training datasets
+  - Fine-tuning datasets
+  - Evaluation benchmarks
+  - Specialized domain data
+
+- **Learning Materials**
+  - Step-by-step tutorials
+  - Best practices documentation
+  - Implementation case studies
+  - Performance optimization guides
+
+- **Open Source Projects (40+)**
+  - LLM-powered applications
+  - Training and fine-tuning frameworks
+  - Deployment solutions
+  - Monitoring and evaluation tools
+
+## Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/llm-resource-hub.git
+cd llm-resource-hub
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js 14](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## License & Contributions
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/llm-resource-hub/issues).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Made by Harsha Gadekar 
