@@ -89,7 +89,7 @@ export default function Page() {
                 >
                   {/* Hero Title */}
                   <motion.div variants={animations.heroScale} className="relative">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/20 filter drop-shadow-lg px-4">
+                    <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/20 filter drop-shadow-lg px-4">
                       Welcome to LLM Resources Hub
                     </h1>
                   </motion.div>
@@ -97,7 +97,7 @@ export default function Page() {
                   {/* Subtitle */}
                   <motion.p 
                     variants={animations.fadeInUp}
-                    className="text-base sm:text-lg md:text-xl text-gray-300 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl mx-auto leading-relaxed px-4"
+                    className="text-sm sm:text-lg md:text-xl text-gray-300 max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl mx-auto leading-relaxed px-4"
                   >
                     Your one-stop destination for all the resources you need to excel in your LLM program.
                   </motion.p>
