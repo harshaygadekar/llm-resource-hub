@@ -3,28 +3,154 @@ import JsonLd from './components/JsonLd'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'LLM Resources Hub | Best Large Language Model Resources & Tutorials',
-  description: 'Discover the best Large Language Model (LLM) resources, tutorials, courses, and tools. Comprehensive collection of AI, ChatGPT, and machine learning materials for beginners and experts.',
-  keywords: [
-    'LLM', 'Large Language Models', 'AI resources', 'Machine Learning tutorials',
-    'ChatGPT tutorials', 'AI courses', 'LLM tutorials', 'AI learning resources',
-    'Machine Learning courses', 'GPT resources', 'Artificial Intelligence learning'
-  ].join(', '),
+  title: 'LLM Resource Hub',
+  description: 'A comprehensive collection of Large Language Model (LLM) resources, tools, and learning materials.',
+  metadataBase: new URL('https://llmresourceshub.vercel.app'),
   openGraph: {
-    title: 'LLM Resources Hub | Best Large Language Model Resources',
-    description: 'Comprehensive collection of Large Language Model (LLM) resources, tutorials, and tools.',
-    url: 'https://your-domain.com',
+    title: 'LLM Resource Hub',
+    description: 'A comprehensive collection of Large Language Model (LLM) resources, tools, and learning materials.',
+    url: 'https://llmresourceshub.vercel.app',
     siteName: 'LLM Resources Hub',
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/llm.png',
         width: 1200,
         height: 630,
-        alt: 'LLM Resources Hub - Your Gateway to AI Learning',
+        alt: 'LLM Resources Hub - explore the frontier of language models',
       },
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'LLM Resources Hub',
+    creator: '@HarshaGadekar',
+    description: 'A comprehensive collection of Large Language Model (LLM) resources, tools, and learning materials.',
+    images: ['/images/llm.png'],
+  },
+  keywords: [
+    'Large Language Models',
+    'LLMs',
+    'Natural Language Processing',
+    'AI',
+    'Machine Learning',
+    'Deep Learning',
+    'Transformers',
+    'BERT',
+    'GPT',
+    'LLM Resources',
+    'LLM Tools',
+    'LLM Learning',
+    'LLM Applications',
+    'LLM Tutorials',
+    'LLM Research',
+    'LLM News',
+    'LLM Community',
+    'LLM Jobs',
+    'LLM Events',
+    'LLM Blogs',
+    'LLM Podcasts',
+    'LLM Videos',
+    'LLM Books',
+    'LLM Courses',
+    'LLM Projects',
+    'LLM Datasets',
+    'LLM Benchmarks',
+    'LLM Evaluation',
+    'LLM Interpretability',
+    'LLM Ethics',
+    'LLM Privacy',
+    'LLM Security',
+    'LLM Regulation',
+    'LLM Trends',
+    'LLM Future',
+    'LLM Research Papers',
+    'LLM Whitepapers',
+    'LLM Case Studies',
+    'LLM Use Cases',
+    'LLM Comparisons',
+    'LLM Reviews',
+    'LLM Glossary',
+    'LLM FAQ',
+    'LLM Community',
+    'LLM Forum',
+    'LLM Chat',
+    'LLM Discord',
+    'LLM Slack',
+    'LLM Reddit',
+    'LLM LinkedIn',
+    'LLM Twitter',
+    'LLM YouTube',
+    'LLM Instagram',
+    'LLM TikTok',
+    'LLM Medium',
+    'LLM Substack',
+    'LLM Newsletter',
+    'LLM Blog',
+    'LLM Podcast',
+    'LLM Video',
+    'LLM Book',
+    'LLM Course',
+    'LLM Project',
+    'LLM Dataset',
+    'LLM Benchmark',
+    'LLM Evaluation',
+    'LLM Interpretability',
+    'LLM Ethics',
+    'LLM Privacy',
+    'LLM Security',
+    'LLM Regulation',
+    'LLM Trends',
+    'LLM Future',
+    'LLM Research Paper',
+    'LLM Whitepaper',
+    'LLM Case Study',
+    'LLM Use Case',
+    'LLM Comparison',
+    'LLM Review',
+    'LLM Glossary',
+    'LLM FAQ',
+    'LLM Community',
+    'LLM Forum',
+    'LLM Chat',
+    'LLM Discord',
+    'LLM Slack',
+    'LLM Reddit',
+    'LLM LinkedIn',
+    'LLM Twitter',
+    'LLM YouTube',
+    'LLM Instagram',
+    'LLM TikTok',
+    'LLM Medium',
+    'LLM Substack',
+    'LLM Newsletter',
+  ],
+  alternates: {
+    canonical: 'https://llmresourceshub.vercel.app',
+  },
+  verification: {
+    google: 'google-site-verification=1234567890',
+  },
+  category: 'technology',
+  authors: [
+    { name: 'Harsha Gadekar', url: 'https://twitter.com/HarshaGadekar' },
+  ],
+  creator: 'Harsha Gadekar',
+  publisher: 'Harsha Gadekar',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
   },
   robots: {
     index: true,
@@ -36,6 +162,10 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 }
 
@@ -55,16 +185,11 @@ export default function RootLayout({
           type="font/woff2" 
           crossOrigin="anonymous" 
         />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
         <link rel="preconnect" href="https://www.google.com" />
         <link rel="dns-prefetch" href="https://www.google.com" />
       </head>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
