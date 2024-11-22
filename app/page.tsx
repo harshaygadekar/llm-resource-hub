@@ -23,24 +23,36 @@ const ContactSection = dynamic(() => import("./components/ContactSection"), {
 });
 
 const animations = {
-  fadeInUp: {
-    initial: { y: 20, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
-  },
-  staggerContainer: {
-    animate: {
+  heroScale: {
+    initial: { scale: 0.8, opacity: 0 },
+    animate: { 
+      scale: 1, 
+      opacity: 1,
       transition: {
-        staggerChildren: 0.15
+        duration: 0.5,
+        ease: [0.6, -0.05, 0.01, 0.99]
       }
     }
   },
-  heroScale: {
-    initial: { scale: 0.95, opacity: 0 },
-    animate: { scale: 1, opacity: 1 },
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+  staggerContainer: {
+    initial: {},
+    animate: {
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  },
+  fadeInUp: {
+    initial: { y: 20, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
   }
-};
+} as const;
 
 export default function Page() {
   const [isLoaded, setIsLoaded] = useState(false);
